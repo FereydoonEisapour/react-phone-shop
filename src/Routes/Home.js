@@ -7,6 +7,7 @@ function Home() {
     const productContext = useContext(ProductContext)
     useEffect(() => {
         productContext.dispatch({ type: 'init_product', payload: storeProducts })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <>
