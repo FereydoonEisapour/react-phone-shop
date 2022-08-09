@@ -1,7 +1,7 @@
 import React, { } from 'react'
 import Products from './Products'
 import Sidebar from './Sidebar'
-function MainProducts() {
+const MainProducts=()=> {
     return (
         <div className="container-fluid p-0 ">
             <div className="row col-12  d-flex justify-content-center ">

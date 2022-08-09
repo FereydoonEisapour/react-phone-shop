@@ -1,12 +1,6 @@
-import React from 'react'
-import Cart from './../Components/Cart/Cart'
+import Cart from "./../Components/Cart/Cart";
+const CartRoute = () => {
+  return <Cart />;
+};
 
-function CartRoute() {
-    return (
-        <>
-            <Cart />
-        </>
-    )
-}
-
-export default CartRoute
+export default CartRoute;

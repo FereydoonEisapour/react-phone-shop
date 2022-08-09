@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import ProductContext from "../../Contexts/products";
 import CartItem from "./CartItem";
-function CartList() {
+const CartList = () => {
   const productContext = useContext(ProductContext);
   let inCartsProducts = productContext.tempProducts.filter((item) => item.inCart === true);
   return (
@@ -15,8 +15,6 @@ function CartList() {
         inCartsProducts.map((products) => (
           <CartItem
             key={products.id}
-            //   products={products}
-            // img, title, price, count, id
             img={products.img}
             title={products.title}
             price={products.price}
@@ -27,6 +25,6 @@ function CartList() {
       )}
     </>
   );
-}
+};
 
 export default CartList;

@@ -12,7 +12,7 @@ const Home = loadable(() => import('./../Routes/Home'));
 const ProductDetails = loadable(() => import('./../Routes/ProductDetails'));
 const CartRoute = loadable(() => import('./../Routes/Cart'));
 const NotFound = loadable(() => import('./../Routes/NotFound'));
-function App() {
+const App=()=> {
   const [state, dispatch] = useReducer(AppReducer, {
     products: [],
     tempProducts: [],
