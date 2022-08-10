@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import ProductContext from "./../../Contexts/products";
-import logo from "./../../cart1.png";
+import logo from "../../assets/cart1.png";
 const Header = () => {
   const productContext = useContext(ProductContext);
 
